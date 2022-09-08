@@ -7,7 +7,7 @@ function Welcome(props) {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log(user);
-		props.callback(user);
+		props.user_callback(user);
 	}
 
 	return (
@@ -15,23 +15,27 @@ function Welcome(props) {
 			<h1>Welcome! First things first...</h1>
 			<p>You can always change them later.</p>
 			<form onSubmit={handleSubmit} >
-				<label>Full Name</label>
-				<br />
-				<input
-					type="text"
-					placeholder="Steve Jobs"
-					onChange={(e) => setUser({...user, full_name: e.target.value})}
-				/>
-				<br />
-				<label>Display Name</label>
-				<br />
-				<input
-					type="text"
-					placeholder="Steve"
-					onChange={(e) => setUser({...user, display_name: e.target.value})}
-				/>
-				<br />
-				<input type="submit" value="Create Workspace" />
+				<div class="form-group">
+					<label for="full_name">Full Name</label>
+					<input
+						id="full_name"
+						className="form-control"
+						type="text"
+						placeholder="Steve Jobs"
+						onChange={(e) => setUser({...user, full_name: e.target.value})}
+					/>
+				</div>
+				<div>
+					<label for="display_name">Display Name</label>
+					<input
+						id="display_name"
+						className="form-control"
+						type="text"
+						placeholder="Steve"
+						onChange={(e) => setUser({...user, display_name: e.target.value})}
+					/>
+				</div>
+				<input type="submit" value="Create Workspace" className="btn btn-primary" />
 			</form>
 		</div>
 	)
