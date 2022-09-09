@@ -1,7 +1,12 @@
+import { useState } from "react";
+
 function Plan(props) {
+
+	const [usage, setUsage] = useState("myself");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		alert(usage);
 		props.stage_callback("congratulation");
 	}
 
@@ -11,11 +16,11 @@ function Plan(props) {
 			<p className="text-center spacing">We'll streamline your setup experienceaccordingly.</p>
 			<form onSubmit={handleSubmit} className="container">
 				<div className="row">
-					<div className="col-md-6 column column1">
+					<div className={"col-md-6 column column1 " + ((usage === "myself") ? "add-border" : null)} onClick={(e) => setUsage("myself")}>
 						<h6>For myself</h6>
 						<p>Write better. Think more clearly. Stay organized</p>
 					</div>
-					<div className="col-md-6 column">
+					<div className={"col-md-6 column column2 " + ((usage === "team") ? "add-border" : null)} onClick={(e) => setUsage("team")}>
 						<h6>With my team</h6>
 						<p>Wikis, docs, tasks &amp; projects, all in one place.</p>
 					</div>
