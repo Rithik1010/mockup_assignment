@@ -1,0 +1,43 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.form-group {
+    width: 400px;
+    margin : 20px auto;
+    /* align-items: center; */
+}
+
+.button {
+    padding: 10px 0;
+    width: 400px;
+    background-color: rgb(115, 77, 211);
+    border: 0px;
+}
+
+.spacing {
+    margin-bottom: 40px;
+}
+
+.row {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.column {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 185px;
+}
+
+.column1 {
+    margin-right: 30px;
+}
+
+.column2 {
+    margin-left: 30px;
+}
