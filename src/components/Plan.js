@@ -6,14 +6,13 @@ function Plan(props) {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		alert(usage);
 		props.stage_callback("congratulation");
 	}
 
 	return (
 		<div>
 			<h2 className="text-center">How are you planning to use Eden?</h2>
-			<p className="text-center spacing">We'll streamline your setup experienceaccordingly.</p>
+			<p className="text-center spacing">We'll streamline your setup experience accordingly.</p>
 			<form onSubmit={handleSubmit} className="container">
 				<div className="row">
 					<div className={"col-md-6 column column1 " + ((usage === "myself") ? "add-border" : null)} onClick={(e) => setUsage("myself")}>

@@ -1,5 +1,6 @@
 .App {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 800px;
@@ -8,7 +9,6 @@
 .form-group {
     width: 400px;
     margin : 20px auto;
-    /* align-items: center; */
 }
 
 .button {
@@ -44,4 +44,19 @@
 
 .add-border {
     border: 2px solid rgb(115, 77, 211);
+}
+
+.step-container {
+    width: 450px;
+    margin-bottom: 50px;
+}
+
+.title-card {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.title-name {
+    margin-left: 10px;
+    margin-bottom: 0;
 }

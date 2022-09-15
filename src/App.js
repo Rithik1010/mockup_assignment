@@ -3,10 +3,12 @@ import Welcome from "./components/Welcome";
 import SetUpHome from "./components/SetUpHome";
 import Plan from "./components/Plan";
 import Congratulation from "./components/Congratulation";
+import StepComponent from "./components/StepComponent";
+import Title from "./components/Title";
 
 function App() {
 	const [user, setUser] = useState({full_name: "", display_name: ""});
-	const [stage, setStage] = useState("Welcome");
+	const [stage, setStage] = useState("welcome");
 
 	const user_callback = (user_obj) => {
 		setUser({
@@ -22,7 +24,9 @@ function App() {
 
 	return (
 		<div className="App">
-			{stage === "Welcome" && <Welcome user_callback={user_callback} />}
+			<Title />
+			<StepComponent stage={stage} />
+			{stage === "welcome" && <Welcome user_callback={user_callback} />}
 			{stage === "setUpHome" && <SetUpHome stage_callback={stage_callback} />}
 			{stage === "plan" && <Plan stage_callback={stage_callback} />}
 			{stage === "congratulation" && <Congratulation user={user} />}
