@@ -13,8 +13,8 @@ function StepComponent(props) {
 			<Stepper
 				steps={[{}, {}, {}, {}]}
 				activeStep={obj[props.stage]}
-				styleConfig={{activeBgColor: "#734DD3", completedBgColor:"#734DD3", inactiveTextColor:"#000000", inactiveBgColor:"#DCDCDC"}} 
-				connectorStyleConfig={{stepSize: "1.7em", completedColor:"#734DD3", activeColor: "#DCDCDC", size: "0.1em"}}
+				styleConfig={{activeBgColor: "#644ce4", completedBgColor:"#644ce4", inactiveTextColor:"#000000", inactiveBgColor:"#ffffff", circleFontSize: "0.8rem", size:"2.1rem"}} 
+				connectorStyleConfig={{stepSize: "1.7em", activeColor:"#644ce4", disabledColor:"#e0e0e0"}}
 			/>
 		</div>
 	);

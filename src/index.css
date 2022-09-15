@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    font-family: 'Inter', sans-serif;
 }
 
 .form-group {
@@ -12,14 +12,16 @@
 }
 
 .button {
-    padding: 10px 0;
+    padding: 13px 0;
     width: 400px;
-    background-color: rgb(115, 77, 211);
+    background-color: #644ce4;
     border: 0px;
+	font-size: 14px;
+	color: rgb(235, 235, 235);
 }
 
 .spacing {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .row {
@@ -36,27 +38,102 @@
 
 .column1 {
     margin-right: 15px;
+	cursor: pointer;
 }
 
 .column2 {
     margin-left: 15px;
+	cursor: pointer;
 }
 
 .add-border {
-    border: 2px solid rgb(115, 77, 211);
+    border: 2px solid #644ce4;
 }
 
 .step-container {
     width: 450px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .title-card {
+	margin-top: 100px;
     display: flex;
     margin-bottom: 50px;
 }
 
 .title-name {
-    margin-left: 10px;
+    margin-left: 8px;
     margin-bottom: 0;
+}
+
+p {
+    color: #615f6a;
+}
+
+h2 {
+    font-weight: bold;
+	font-size: 32px;
+}
+
+.name-tag {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #59647b;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #9ca4ac;
+	font-size: 15px;
+}
+
+.input-group-text {
+	padding: 13px 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #aeb2ba;
+	background-color: #fafafa;
+}
+
+.in-same-line {
+	float: left;
+}
+
+.gap-to-left {
+	margin: 0 5px;
+	font-size: 15px;
+	color: #bdb7cb;
+}
+
+.icon {
+	margin-bottom: 20px;
+}
+
+.bold_it {
+	font-weight: bold;
+}
+
+.center-items {
+	margin: 30px auto 50px auto;
+	border: 1px;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #644ce4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.outer-circle {
+	text-align: center;
+}
+
+#RFS-StepButton {
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+}
+
+.spacing2 {
+	margin-bottom: 30px;
 }
